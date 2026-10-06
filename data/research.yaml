@@ -1,0 +1,58 @@
+# Research listed on the homepage (jmp) and on /research/.
+# Edit this file only; both pages read from it.
+# Fields: title, coauthors (optional), status (optional), abstract (markdown), links.
+# Link icons are Font Awesome names (icon_pack fas/fab) or Academicons (icon_pack ai).
+
+jmp:
+  title: "[Job Market Paper Title]"
+  coauthors: ""
+  status: ""
+  abstract: |
+    [Placeholder abstract. In three to five sentences, state the question, the setting
+    (e.g., which electricity market), the data and empirical strategy, the main finding,
+    and why it matters for policy.]
+  links:
+    - name: Paper
+      icon: file-pdf
+      icon_pack: fas
+      url: /files/Zhou_JMP.pdf
+    # - name: Slides
+    #   icon: chalkboard
+    #   icon_pack: fas
+    #   url: /files/Zhou_JMP_slides.pdf
+
+publications: []
+  # - title: "[Published Paper Title]"
+  #   coauthors: "[Coauthor Name]"
+  #   status: "*Journal Name*, 2026"
+  #   abstract: ""
+  #   links:
+  #     - name: Journal
+  #       icon: link
+  #       icon_pack: fas
+  #       url: https://doi.org/...
+
+working_papers:
+  - title: "[Working Paper Title]"
+    coauthors: "[Coauthor Name]"
+    status: ""
+    abstract: |
+      [Placeholder abstract.]
+    links:
+      - name: Draft
+        icon: file-pdf
+        icon_pack: fas
+        url: "#"
+  - title: "[Second Working Paper Title]"
+    coauthors: ""
+    status: ""
+    abstract: |
+      [Placeholder abstract.]
+    links: []
+
+work_in_progress:
+  - title: "[Work in Progress Title]"
+    coauthors: ""
+    status: ""
+    abstract: ""
+    links: []

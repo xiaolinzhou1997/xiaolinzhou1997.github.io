@@ -1,0 +1,21 @@
+# Shown on the homepage and on /cv/.
+
+references:
+  - name: "[Advisor Name]"
+    title: "Professor of Resource Economics (Advisor)"
+    institution: "University of Massachusetts Amherst"
+    email: "advisor@umass.edu"
+  - name: "[Reference Name]"
+    title: "[Title]"
+    institution: "[Institution]"
+    email: "reference@example.edu"
+  - name: "[Reference Name]"
+    title: "[Title]"
+    institution: "[Institution]"
+    email: "reference@example.edu"
+
+placement:
+  - name: "[Placement Director Name]"
+    title: "Placement Director"
+    institution: "Department of Resource Economics, UMass Amherst"
+    email: "placement@umass.edu"

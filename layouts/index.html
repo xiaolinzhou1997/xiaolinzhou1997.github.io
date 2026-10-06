@@ -1,0 +1,36 @@
+{{/* Job market homepage: overrides the theme's index.html. Text lives in content/_index.md, papers in data/. */}}
+{{ define "main" }}
+<main class="page-main pa4 jm" role="main">
+  <section class="page-content mw9 center">
+    <div class="flex-l items-center">
+      <div class="mh4 w-60-l">
+        <h1 class="f2 f1-m f-subheadline-l fw5-ns mv4 lh-solid">{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<h2 class="f5 fw7 mt0 mb3 ttu tracked lh-copy">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .Params.market_note }}<p class="f4 b mv3 lh-copy">{{ . | markdownify }}</p>{{ end }}
+        {{ with .Params.fields }}<p class="f5 mv3 lh-copy"><span class="f6 b ttu tracked mr2">Fields</span>{{ delimit . " · " }}</p>{{ end }}
+        {{ with .Content }}<div class="f5 lh-copy measure-wide">{{ . }}</div>{{ end }}
+        <div class="mt3">{{ partial "shared/btn-links.html" . }}</div>
+        {{ if .Params.show_social_links }}<div class="mt2">{{ partial "shared/social-links.html" . }}</div>{{ end }}
+      </div>
+      <div class="w-40-l tc mh4">
+        {{ with .Params.images }}{{ range first 1 . }}<img class="mv4 w-60 w-70-l br2" src="{{ . | relURL }}" alt="Photo of {{ site.Title }}"/>{{ end }}{{ end }}
+      </div>
+    </div>
+
+    {{ with site.Data.research.jmp }}
+    <section class="mh4 mt5 pt4 bt b--black-10">
+      <h2 class="f5 fw7 ttu tracked mb3">Job Market Paper</h2>
+      {{ partial "paper.html" (dict "paper" . "open" true) }}
+      <a class="f6 ttu tracked b link" href="{{ "research/" | relURL }}">All research &rarr;</a>
+    </section>
+    {{ end }}
+
+    {{ with site.Data.references }}
+    <section class="mh4 mt5 pt4 bt b--black-10">
+      <h2 class="f5 fw7 ttu tracked mb3">References</h2>
+      {{ partial "references.html" . }}
+    </section>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

@@ -1,0 +1,7 @@
+{{/* Usage: {{< papers "working_papers" >}} — renders one list from data/research.yaml */}}
+{{ $key := .Get 0 }}
+{{ $items := index site.Data.research $key }}
+{{ if reflect.IsMap $items }}{{ $items = slice $items }}{{ end }}
+<div class="jm">
+{{ range $items }}{{ partial "paper.html" (dict "paper" . "open" (eq $key "jmp")) }}{{ end }}
+</div>
