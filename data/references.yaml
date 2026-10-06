@@ -1,18 +1,18 @@
 # Shown on the homepage and on /cv/.
 
 references:
-  - name: "[Advisor Name]"
-    title: "Professor of Resource Economics (Advisor)"
+  - name: "Christine Crago"
+    title: "Associate Professor of Resource Economics"
     institution: "University of Massachusetts Amherst"
-    email: "advisor@umass.edu"
-  - name: "[Reference Name]"
-    title: "[Title]"
-    institution: "[Institution]"
-    email: "reference@example.edu"
-  - name: "[Reference Name]"
-    title: "[Title]"
-    institution: "[Institution]"
-    email: "reference@example.edu"
+    email: "ccrago@resecon.umass.edu"
+  - name: "Yongjoon Park"
+    title: "Assistant Professor of Resource Economics"
+    institution: "University of Massachusetts Amherst"
+    email: "yongjoonpark@umass.edu"
+  - name: "Matt Woerman"
+    title: "Associate Professor of Resource Economics"
+    institution: "University of Massachusetts Amherst"
+    email: "mwoerman@umass.edu"
 
 placement:
   - name: "[Placement Director Name]"
