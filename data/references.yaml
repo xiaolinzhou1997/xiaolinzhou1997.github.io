@@ -1,0 +1,21 @@
+# Shown on the homepage and on /cv/.
+
+references:
+  - name: "Christine Crago"
+    title: "Associate Professor of Resource Economics"
+    institution: "University of Massachusetts Amherst"
+    email: "ccrago@resecon.umass.edu"
+  - name: "Yongjoon Park"
+    title: "Assistant Professor of Resource Economics"
+    institution: "University of Massachusetts Amherst"
+    email: "yongjoonpark@umass.edu"
+  - name: "Matt Woerman"
+    title: "Assistant Professor of Agricultural and Resource Economics"
+    institution: "Colorado State University"
+    email: "Matt.Woerman@colostate.edu"
+
+placement:
+  - name: "[Placement Director Name]"
+    title: "Placement Director"
+    institution: "Department of Resource Economics, UMass Amherst"
+    email: "placement@umass.edu"

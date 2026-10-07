@@ -533,3 +533,11 @@ $fa-font-path: '{{ "webfonts" | relURL }}';
 
 // import a custom css file in assets
 @import "custom";
+
+// job market pages: paper/CV buttons outside post headers
+.jm a.btn-links {
+  @extend .fw4, .ph3, .pv2, .mb3, .f6, .ttu, .tracked, .b, .br0, .link, .pointer, .bg-animate, .#{$headingColor}, .hover-#{$buttonHoverTextColor}, .bg-transparent, .hover-bg-#{$buttonHoverBgColor};
+}
+.jm details summary {
+  @extend .mb2;
+}
