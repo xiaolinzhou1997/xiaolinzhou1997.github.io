@@ -9,7 +9,7 @@ show_intro: true
 intro: |
   I am a PhD candidate in the [Department of Resource Economics](https://www.umass.edu/resec/) at UMass Amherst, and I am on the 2026–2027 job market. I completed my MS in agricultural and resource economics at :cactus: [Arizona](https://economics.arizona.edu/) while watching [saguaro cactus](https://en.wikipedia.org/wiki/Saguaro) grow slowly every day. 
   
-  My interests in economics all started back when I was an undergraduate in Taiwan, witnessing people marching against nuclear power plants but breathing polluted air emitted by [giant coal fired plants](https://en.wikipedia.org/wiki/Taichung_Power_Plant). Today I explore broad topics in Industrial Organization with a particular focus on electricity market. You can find my papers on the [research](/research/) page, and a few [travel notes](/travel/) from the road.
+  My interests in economics all started back when I was an undergraduate in Taiwan, witnessing people marching against nuclear power plants but breathing polluted air emitted by [giant coal fired plants](https://en.wikipedia.org/wiki/Taichung_Power_Plant). Today I explore broad topics in Industrial Organization with a particular focus on electricity market. You can find my papers on the [research](/research/) page.
 show_outro: true
 outro: |
   Click the envelope to shoot me an email, Cheers! </i><i class="fas fa-glass-cheers pr2"></i>

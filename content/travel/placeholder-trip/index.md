@@ -3,7 +3,7 @@ title: "[Placeholder Trip Title]"
 subtitle: ""
 excerpt: "[One-line teaser for the listing page.]"
 date: 2026-10-06
-draft: false
+draft: true  # sample post; see TODO.md
 layout: single
 tags:
   - travel

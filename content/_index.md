@@ -5,8 +5,8 @@ market_note: I am on the 2026–2027 economics job market.
 fields:
   - Industrial Organization
   - Energy and Environmental Economics
-images:
-  - img/headshot-placeholder.svg  # replace with a professional photo in static/img/
+# images:  # TODO.md: add a professional headshot to static/img/ and uncomment
+#   - img/headshot.jpg
 show_social_links: true
 links:
   - name: Job Market Paper
@@ -24,6 +24,6 @@ links:
 type: home
 ---
 
-[Placeholder: two or three sentences on your research agenda. For example: I study
-how market design and regulation shape competition in electricity markets, using
-tools from empirical industrial organization.]
+In my job market paper, I show that about 85% of Massachusetts' production-based solar subsidies reach households, evidence of a residential solar installer market close to competitive.
+With Ming Ge, James Ji, and Matt Woerman, I use nuclear refueling outages to measure market power in the New England wholesale electricity market.
+With Yongjoon Park, I ask whether driver-assistance technology can offset the safety externality that heavier vehicles impose on others on the road.
