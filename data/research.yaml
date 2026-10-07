@@ -4,13 +4,23 @@
 # Link icons are Font Awesome names (icon_pack fas/fab) or Academicons (icon_pack ai).
 
 jmp:
-  title: "[Job Market Paper Title]"
+  title: "Subsidy Pass-through and Market Power: Evidence from Production-Based Solar Subsidies"
   coauthors: ""
-  status: ""
+  status: "Latest version: October 2026"
   abstract: |
-    [Placeholder abstract. In three to five sentences, state the question, the setting
-    (e.g., which electricity market), the data and empirical strategy, the main finding,
-    and why it matters for policy.]
+    I examine the pass-through of solar subsidies in Massachusetts by comparing two distinct
+    incentive programs that pay residential solar adopters based on the electricity their systems
+    generate: the Solar Carve-Out program, which compensates owners through tradable SRECs sold at
+    market prices, and its successor, SMART, which pays a fixed rate set at the time of application.
+    A key contribution is the construction of subsidy measures specific to each project that account
+    for heterogeneity in electricity generation potential, which allows me to identify pass-through
+    from differences in generation across roofs. Baseline estimates are 76% under Solar Carve-Out and
+    102% under SMART, but much of this gap reflects how each subsidy moved over time alongside falling
+    installation costs. Using only variation in generation across roofs, pass-through is about 85% in
+    both programs, with no significant difference between them. Demand under SMART is log-concave, so
+    market power would push pass-through below one. High pass-through therefore bounds installer
+    markups at a few percent of price at the point estimates. Unlike the over-shifting found for
+    leased systems in California, the evidence points to an installer market close to competitive.
   links:
     - name: Paper
       icon: file-pdf
