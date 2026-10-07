@@ -12,7 +12,7 @@ references:
   - name: "Matt Woerman"
     title: "Assistant Professor of Agricultural and Resource Economics"
     institution: "Colorado State University"
-    email: ""  # TODO: add his Colorado State email
+    email: "Matt.Woerman@colostate.edu"
 
 placement:
   - name: "[Placement Director Name]"
