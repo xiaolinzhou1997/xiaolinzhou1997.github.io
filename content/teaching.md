@@ -7,12 +7,17 @@ show_title_as_headline: true
 
 ## Instructor
 
-- **[Course Number: Course Title]**, University of Massachusetts Amherst, [Semester Year]
-  <br>[One line: level, enrollment, evaluation score if you want to show it.]
+University of Massachusetts Amherst
+
+- **Managerial Economics** (Undergraduate), Summer 2024, 2025, 2026
+- **Hunger in the Global Economy** (Undergraduate), Fall 2025
 
 ## Teaching Assistant
 
-- **[Course Number: Course Title]**, University of Massachusetts Amherst, [Semesters]
-- **[Course Number: Course Title]**, University of Arizona, [Semesters]
+University of Massachusetts Amherst
+
+- **Intro to Statistics** (Undergraduate), multiple terms
+- **Industrial Economics** (Undergraduate)
+- **Statistics** (Graduate)
 
 <!-- Optional: link teaching evaluations or a teaching statement placed in static/files/ -->

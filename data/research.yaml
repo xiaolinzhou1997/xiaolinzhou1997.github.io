@@ -43,26 +43,16 @@ publications: []
   #       url: https://doi.org/...
 
 working_papers:
-  - title: "[Working Paper Title]"
-    coauthors: "[Coauthor Name]"
+  - title: "Market Power in the New England Electricity Market: Evidence from Nuclear Refueling Outages"
+    coauthors: "Ming Ge, James Ji, and Matt Woerman"
     status: ""
-    abstract: |
-      [Placeholder abstract.]
-    links:
-      - name: Draft
-        icon: file-pdf
-        icon_pack: fas
-        url: "#"
-  - title: "[Second Working Paper Title]"
-    coauthors: ""
-    status: ""
-    abstract: |
-      [Placeholder abstract.]
+    abstract: ""  # add an abstract here and it shows as an expandable "Abstract"
     links: []
-
-work_in_progress:
-  - title: "[Work in Progress Title]"
-    coauthors: ""
+  - title: "Can Driver-Assistance Technology Offset the Vehicle-Weight Externality?"
+    coauthors: "Yongjoon Park"
     status: ""
     abstract: ""
     links: []
+
+# Add entries here (same fields as above); the section is hidden while empty.
+work_in_progress: []
