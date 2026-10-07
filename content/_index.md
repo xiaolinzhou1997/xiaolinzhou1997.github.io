@@ -24,4 +24,6 @@ links:
 type: home
 ---
 
-<!-- TODO.md: add a 2-3 sentence research summary here; it shows under the job market buttons. -->
+In my job market paper, I show that about 85% of Massachusetts' production-based solar subsidies reach households, evidence of a residential solar installer market close to competitive.
+With Ming Ge, James Ji, and Matt Woerman, I use nuclear refueling outages to measure market power in the New England wholesale electricity market.
+With Yongjoon Park, I ask whether driver-assistance technology can offset the safety externality that heavier vehicles impose on others on the road.

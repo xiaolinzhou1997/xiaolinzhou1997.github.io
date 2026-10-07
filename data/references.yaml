@@ -15,8 +15,7 @@ references:
     email: "Matt.Woerman@colostate.edu"
 
 placement:
-  - draft: true  # hidden until filled in (see TODO.md)
-    name: "[Placement Director Name]"
-    title: "Placement Director"
-    institution: "Department of Resource Economics, UMass Amherst"
-    email: "placement@umass.edu"
+  - name: "Mike Eber"
+    title: "Placement Director; Assistant Professor of Resource Economics"
+    institution: "University of Massachusetts Amherst"
+    email: "meber@umass.edu"
