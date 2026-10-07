@@ -3,5 +3,5 @@
 {{ $items := index site.Data.research $key }}
 {{ if reflect.IsMap $items }}{{ $items = slice $items }}{{ end }}
 <div class="jm">
-{{ range $items }}{{ partial "paper.html" (dict "paper" . "open" (eq $key "jmp")) }}{{ end }}
+{{ range where $items "draft" "ne" true }}{{ partial "paper.html" (dict "paper" . "open" (eq $key "jmp")) }}{{ end }}
 </div>

@@ -1,4 +1,4 @@
-# Shown on the homepage and on /cv/.
+# Shown on the homepage and on /cv/. Add `draft: true` to an entry to hide it.
 
 references:
   - name: "Christine Crago"
@@ -15,7 +15,8 @@ references:
     email: "Matt.Woerman@colostate.edu"
 
 placement:
-  - name: "[Placement Director Name]"
+  - draft: true  # hidden until filled in (see TODO.md)
+    name: "[Placement Director Name]"
     title: "Placement Director"
     institution: "Department of Resource Economics, UMass Amherst"
     email: "placement@umass.edu"

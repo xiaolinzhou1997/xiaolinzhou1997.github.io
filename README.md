@@ -17,4 +17,4 @@ Build locally with Hugo 0.105.0 extended: `hugo server`.
 | Travel posts | one folder per trip in `content/travel/`, with `index.md` and photos |
 | Menu, social icons (Scholar/SSRN/LinkedIn placeholders) | `config.toml` |
 
-Placeholder text is in [square brackets].
+Placeholder text is in [square brackets]. Unfinished items are hidden from the site and listed in `TODO.md`.

@@ -138,11 +138,12 @@ enableEmoji = true
     title = "About Me"
     url = "/about/"
     weight = 4
-  [[menu.header]]
-    name = "Travel"
-    title = "Travel Notes"
-    url = "/travel/"
-    weight = 5
+  # Hidden until the first travel post is published (see TODO.md)
+  # [[menu.header]]
+  #   name = "Travel"
+  #   title = "Travel Notes"
+  #   url = "/travel/"
+  #   weight = 5
 
   # Configure footer  
   [[menu.footer]]

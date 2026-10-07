@@ -5,8 +5,8 @@ market_note: I am on the 2026–2027 economics job market.
 fields:
   - Industrial Organization
   - Energy and Environmental Economics
-images:
-  - img/headshot-placeholder.svg  # replace with a professional photo in static/img/
+# images:  # TODO.md: add a professional headshot to static/img/ and uncomment
+#   - img/headshot.jpg
 show_social_links: true
 links:
   - name: Job Market Paper
@@ -24,6 +24,4 @@ links:
 type: home
 ---
 
-[Placeholder: two or three sentences on your research agenda. For example: I study
-how market design and regulation shape competition in electricity markets, using
-tools from empirical industrial organization.]
+<!-- TODO.md: add a 2-3 sentence research summary here; it shows under the job market buttons. -->

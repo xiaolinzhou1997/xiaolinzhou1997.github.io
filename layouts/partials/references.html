@@ -1,7 +1,7 @@
-{{/* References and placement contacts from data/references.yaml */}}
+{{/* References and placement contacts from data/references.yaml (entries with draft: true are hidden) */}}
 {{ with site.Data.references }}
 <div class="flex-l flex-wrap">
-  {{ range .references }}
+  {{ range where .references "draft" "ne" true }}
   <div class="w-third-l pr4 mb3 lh-copy">
     <p class="b mv0">{{ .name }}</p>
     <p class="f6 mv0">{{ .title }}</p>
@@ -10,7 +10,7 @@
   </div>
   {{ end }}
 </div>
-{{ with .placement }}
+{{ with where .placement "draft" "ne" true }}
 <h3 class="f6 fw7 ttu tracked mt4 mb2">Placement</h3>
 <div class="flex-l flex-wrap">
   {{ range . }}
