@@ -10,9 +10,9 @@ references:
     institution: "University of Massachusetts Amherst"
     email: "yongjoonpark@umass.edu"
   - name: "Matt Woerman"
-    title: "Associate Professor of Resource Economics"
-    institution: "University of Massachusetts Amherst"
-    email: "mwoerman@umass.edu"
+    title: "Assistant Professor of Agricultural and Resource Economics"
+    institution: "Colorado State University"
+    email: ""  # TODO: add his Colorado State email
 
 placement:
   - name: "[Placement Director Name]"
