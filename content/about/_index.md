@@ -1,6 +1,4 @@
 ---
-cascade:
-  headless: true
 description: |
 show_header: false
 sidebar_left: true

@@ -3,8 +3,8 @@ title: Xiaolin Zhou
 subtitle: PhD Candidate in Resource Economics · University of Massachusetts Amherst
 market_note: I am on the 2026–2027 economics job market.
 fields:
-  - Industrial Organization
   - Energy and Environmental Economics
+  - Industrial Organization
 # images:  # TODO.md: add a professional headshot to static/img/ and uncomment
 #   - img/headshot.jpg
 show_social_links: true

@@ -1,0 +1,9 @@
+{{/* Theme page/standard.html, as a type so both old and new Hugo (0.146+) find it. */}}
+{{ define "main" }}
+<main class="page-main pa4" role="main">
+  <section class="page-content mw8 center">
+    {{ if .Params.show_title_as_headline }}<h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns">{{ .Title }}</h1>{{ end }}
+    {{ .Content }}
+  </section>
+</main>
+{{ end }}

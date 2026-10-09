@@ -29,7 +29,7 @@ enableEmoji = true
     
 [params]
   orgName = "Xiaolin Zhou"
-  orgLocal = "Sunderland MA"
+  orgLocal = ""
   description = "Xiaolin Zhou, PhD candidate in Resource Economics at UMass Amherst, working on industrial organization and electricity markets."
   favicon = "/img/icon.png"
   logo = "/img/icon.png"
@@ -43,7 +43,7 @@ enableEmoji = true
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "XiaolinZhou6"
+  twitter = ""
 
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
@@ -67,6 +67,11 @@ enableEmoji = true
   # for more http://tachyons.io/docs/typography/font-family/
   textFontFamily = "sans-serif"
   headingFontFamily = "sans-serif"
+
+  # CARTO basemap key for the Job Map (/jobs/). It is sent from visitors' browsers, so it is
+  # public by design: restrict it to this site's domains in the CARTO dashboard.
+  # Leave empty to fall back to OpenStreetMap tiles.
+  cartoApiKey = "cb1_4eww_1_670ea448a88b8003ae75c25d"
 
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
@@ -93,10 +98,6 @@ enableEmoji = true
       icon      = "github"
       icon_pack = "fab"
       url       = "https://github.com/xiaolinzhou1997"
-  [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://twitter.com/XiaolinZhou6"
   # Placeholders: uncomment and fill in your profile URLs.
   # [[params.social]]
   #     icon      = "google-scholar"
@@ -138,6 +139,11 @@ enableEmoji = true
     title = "About Me"
     url = "/about/"
     weight = 4
+  [[menu.header]]
+    name = "Job Map"
+    title = "Map of current AEA JOE job postings"
+    url = "/jobs/"
+    weight = 5
   # Hidden until the first travel post is published (see TODO.md)
   # [[menu.header]]
   #   name = "Travel"

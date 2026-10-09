@@ -1,7 +1,7 @@
 ---
 title: CV
 description: Curriculum vitae of Xiaolin Zhou.
-layout: standard
+type: standard  # uses layouts/standard/single.html
 show_title_as_headline: true
 ---
 
