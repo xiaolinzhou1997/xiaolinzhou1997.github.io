@@ -29,7 +29,7 @@ enableEmoji = true
     
 [params]
   orgName = "Xiaolin Zhou"
-  orgLocal = "Sunderland MA"
+  orgLocal = ""
   description = "Xiaolin Zhou, PhD candidate in Resource Economics at UMass Amherst, working on industrial organization and electricity markets."
   favicon = "/img/icon.png"
   logo = "/img/icon.png"
