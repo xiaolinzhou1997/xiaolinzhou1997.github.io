@@ -35,10 +35,18 @@
   var data, postings = [], markersById = {};
 
   var map = L.map("joe-map", { worldCopyJump: true, minZoom: 1, zoomSnap: 0.5 });
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-    maxZoom: 18, subdomains: "abcd",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-  }).addTo(map);
+  // Basemap: CARTO light (needs a key since Sept 2026; set params.cartoApiKey in config.toml).
+  // Without a key, fall back to standard OpenStreetMap tiles, which need none.
+  var osm = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+  var cartoKey = root.dataset.cartoKey;
+  if (cartoKey) {
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=" + encodeURIComponent(cartoKey), {
+      maxZoom: 18, subdomains: "abcd",
+      attribution: osm + ' &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    }).addTo(map);
+  } else {
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: osm }).addTo(map);
+  }
   map.fitBounds(VIEWS.world);
 
   var clusters = L.markerClusterGroup({

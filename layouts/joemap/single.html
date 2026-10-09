@@ -83,7 +83,7 @@
 </style>
 
 <main class="page-main pa4" role="main">
-  <section class="page-content mw9 center joe" id="joe" data-src="{{ "data/joe-postings.json" | relURL }}">
+  <section class="page-content mw9 center joe" id="joe" data-src="{{ "data/joe-postings.json" | relURL }}" data-carto-key="{{ site.Params.cartoApiKey }}">
     <h1 class="f2 f1-l fw5-ns mv3 lh-solid">{{ .Title }}</h1>
     <div class="joe-lead">{{ .Content }}</div>
     <p class="joe-meta" id="joe-meta">Loading postings…</p>

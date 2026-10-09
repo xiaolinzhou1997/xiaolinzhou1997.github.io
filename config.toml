@@ -68,6 +68,11 @@ enableEmoji = true
   textFontFamily = "sans-serif"
   headingFontFamily = "sans-serif"
 
+  # CARTO basemap key for the Job Map (/jobs/). It is sent from visitors' browsers, so it is
+  # public by design: restrict it to this site's domains in the CARTO dashboard.
+  # Leave empty to fall back to OpenStreetMap tiles.
+  cartoApiKey = "cb1_4eww_1_670ea448a88b8003ae75c25d"
+
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
     use_utterances = false
