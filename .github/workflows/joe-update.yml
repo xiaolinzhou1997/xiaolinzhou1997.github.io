@@ -28,9 +28,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -43,12 +43,12 @@ jobs:
         run: |
           curl --fail --silent --show-error --location --retry 3 --retry-delay 20 \
             --user-agent "Mozilla/5.0 (compatible; job-map daily refresh; +https://xiaolinzhou1997.github.io/jobs/)" \
-            --output "$RUNNER_TEMP/joe_export" "$JOE_EXPORT_URL"
-          ls -l "$RUNNER_TEMP/joe_export"
+            --output "$RUNNER_TEMP/joe_export.xlsx" "$JOE_EXPORT_URL"
+          ls -l "$RUNNER_TEMP/joe_export.xlsx"
 
       # Fails (and leaves the map as is) if the download is not a JOE spreadsheet or has no postings.
       - name: Rebuild map data
-        run: python scripts/joe/build_joe.py "$RUNNER_TEMP/joe_export"
+        run: python scripts/joe/build_joe.py "$RUNNER_TEMP/joe_export.xlsx"
 
       - name: Commit if postings changed
         id: commit
