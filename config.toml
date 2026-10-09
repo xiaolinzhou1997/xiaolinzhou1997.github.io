@@ -134,6 +134,11 @@ enableEmoji = true
     title = "About Me"
     url = "/about/"
     weight = 4
+  [[menu.header]]
+    name = "Job Map"
+    title = "Map of current AEA JOE job postings"
+    url = "/jobs/"
+    weight = 5
   # Hidden until the first travel post is published (see TODO.md)
   # [[menu.header]]
   #   name = "Travel"

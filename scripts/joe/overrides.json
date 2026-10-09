@@ -1,0 +1,48 @@
+{
+  "_comment": "Exact JOE location line -> coordinates, for places the city database can't resolve.",
+  "UNITED STATES California Silicon Valley": {
+    "lat": 37.3875,
+    "lon": -122.0575,
+    "label": "Silicon Valley, CA"
+  },
+  "UNITED STATES District of Columbia District of Columbia": {
+    "lat": 38.8951,
+    "lon": -77.0364,
+    "label": "Washington, DC"
+  },
+  "UNITED STATES District of Columbia": {
+    "lat": 38.8951,
+    "lon": -77.0364,
+    "label": "Washington, DC"
+  },
+  "CHINA Hong Kong": {
+    "lat": 22.2783,
+    "lon": 114.1747,
+    "label": "Hong Kong"
+  },
+  "UNITED STATES Maryland St Mary's City": {
+    "lat": 38.1868,
+    "lon": -76.4344,
+    "label": "St. Mary's City, MD"
+  },
+  "UNITED STATES Tennessee Milligan": {
+    "lat": 36.2976,
+    "lon": -82.2985,
+    "label": "Milligan, TN"
+  },
+  "UNITED STATES Pennsylvania University Park": {
+    "lat": 40.7982,
+    "lon": -77.8599,
+    "label": "University Park, PA"
+  },
+  "JAPAN Tokyo Minato-ku": {
+    "lat": 35.6581,
+    "lon": 139.7516,
+    "label": "Minato, Tokyo, Japan"
+  },
+  "JAPAN Tokyo Yushima, Bunkyo": {
+    "lat": 35.7075,
+    "lon": 139.7686,
+    "label": "Bunkyo, Tokyo, Japan"
+  }
+}
