@@ -138,8 +138,10 @@ class Gazetteer:
 def read_rows(path):
     """Header + rows from a JOE export: .xlsx, or Excel 2003 XML (SpreadsheetML)."""
     if zipfile.is_zipfile(path):
-        sheet = openpyxl.load_workbook(path, read_only=True).worksheets[0]
-        return list(sheet.iter_rows(values_only=True))
+        # Pass an open file: openpyxl rejects paths without an .xlsx extension.
+        with open(path, "rb") as f:
+            sheet = openpyxl.load_workbook(f, read_only=True).worksheets[0]
+            return list(sheet.iter_rows(values_only=True))
     head = path.read_bytes()[:4000]
     if b"urn:schemas-microsoft-com:office:spreadsheet" in head:
         ns = {"ss": "urn:schemas-microsoft-com:office:spreadsheet"}
