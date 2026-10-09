@@ -1,7 +1,7 @@
 ---
 description: License for the content of this site.
 draft: false
-layout: standard
+type: standard  # uses layouts/standard/single.html
 show_title_as_headline: true
 title: License
 ---

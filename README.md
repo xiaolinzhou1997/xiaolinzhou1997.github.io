@@ -1,7 +1,7 @@
 # Xiaolin Zhou: job market website
 
 Hugo site (theme: hugo-apero), deployed by Netlify to https://xiaolinzhou.netlify.app.
-Build locally with Hugo 0.105.0 extended: `hugo server`.
+Build locally with `hugo server` (Hugo extended; tested with 0.105.0, which the deploys use, and 0.167.0).
 
 ## Where to edit
 

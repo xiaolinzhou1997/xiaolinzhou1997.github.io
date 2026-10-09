@@ -1,4 +1,5 @@
 ---
+headless: true  # building block of /about/, not a page of its own
 ## Configure sidebar content in narrow column
 author: "Xiaolin Zhou"
 role: "PhD Candidate, UMass Amherst"

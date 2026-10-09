@@ -1,4 +1,5 @@
 ---
+headless: true  # building block of /about/, not a page of its own
 ## Configure page content in wide column
 title: "About me" # leave blank to exclude
 number_featured: 0 # pulling from mainSections in config.toml
