@@ -14,8 +14,5 @@ references:
     institution: "Colorado State University"
     email: "Matt.Woerman@colostate.edu"
 
-placement:
-  - name: "Mike Eber"
-    title: "Placement Director; Assistant Professor of Resource Economics"
-    institution: "University of Massachusetts Amherst"
-    email: "meber@umass.edu"
+# Placement contact(s), shown under "Placement" when listed. Empty hides the section.
+placement: []
