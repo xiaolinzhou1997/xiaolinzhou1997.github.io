@@ -135,8 +135,8 @@ enableEmoji = true
     url = "/teaching/"
     weight = 3
   [[menu.header]]
-    name = "About"
-    title = "About Me"
+    name = "Personal"
+    title = "Personal"
     url = "/about/"
     weight = 4
   [[menu.header]]

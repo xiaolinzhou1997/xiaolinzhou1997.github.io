@@ -19,6 +19,8 @@ import re
 import statistics
 import sys
 import unicodedata
+import xml.etree.ElementTree as ET
+import zipfile
 from collections import defaultdict
 
 import geonamescache
@@ -133,6 +135,30 @@ class Gazetteer:
                 return max(found, key=lambda c: c["population"])
         return None
 
+def read_rows(path):
+    """Header + rows from a JOE export: .xlsx, or Excel 2003 XML (SpreadsheetML)."""
+    if zipfile.is_zipfile(path):
+        sheet = openpyxl.load_workbook(path, read_only=True).worksheets[0]
+        return list(sheet.iter_rows(values_only=True))
+    head = path.read_bytes()[:4000]
+    if b"urn:schemas-microsoft-com:office:spreadsheet" in head:
+        ns = {"ss": "urn:schemas-microsoft-com:office:spreadsheet"}
+        table = ET.parse(path).getroot().find(".//ss:Worksheet/ss:Table", ns)
+        rows = []
+        for row in table.findall("ss:Row", ns):
+            values = []
+            for cell in row.findall("ss:Cell", ns):
+                index = cell.get(f"{{{ns['ss']}}}Index")  # 1-based; skipped cells are empty
+                if index:
+                    values.extend([None] * (int(index) - 1 - len(values)))
+                data = cell.find("ss:Data", ns)
+                values.append("".join(data.itertext()) if data is not None else None)
+            rows.append(tuple(values))
+        return rows
+    snippet = head[:200].decode("utf-8", "replace").strip()
+    raise SystemExit(f"{path} is not a JOE spreadsheet export. It starts with:\n{snippet}")
+
+
 def place(line, gaz, overrides):
     """One JOE location line -> dict(lat, lon, label, precision) or None."""
     line = re.sub(r"\s+", " ", line).strip()
@@ -176,7 +202,7 @@ def place(line, gaz, overrides):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("export", type=pathlib.Path, help="JOE listings export (.xlsx)")
+    parser.add_argument("export", type=pathlib.Path, help="JOE listings export (.xlsx or Excel XML)")
     parser.add_argument("-o", "--out", type=pathlib.Path, default=OUT)
     args = parser.parse_args()
 
@@ -184,9 +210,10 @@ def main():
     overrides = {k: v for k, v in overrides.items() if not k.startswith("_")}
     gaz = Gazetteer()
 
-    sheet = openpyxl.load_workbook(args.export, read_only=True).worksheets[0]
-    rows = sheet.iter_rows(values_only=True)
-    header = next(rows)
+    rows = iter(read_rows(args.export))
+    header = next(rows, ())
+    if "jp_id" not in header or "locations" not in header:
+        raise SystemExit(f"{args.export} has no JOE columns (jp_id, locations). Header: {header[:6]}")
     postings, jel_names, approximate, issues = [], {}, defaultdict(int), set()
     for values in rows:
         r = dict(zip(header, values))
@@ -207,9 +234,10 @@ def main():
                 locs.append({k: round(v, 4) if isinstance(v, float) else v for k, v in loc.items()})
         issue = str(r["joe_issue_ID"])
         issues.add(issue)
+        jp_id = int(float(r["jp_id"]))  # a number in .xlsx, text in Excel XML
         postings.append({
-            "id": r["jp_id"],
-            "url": LISTING_URL.format(issue=issue, id=r["jp_id"]),
+            "id": jp_id,
+            "url": LISTING_URL.format(issue=issue, id=jp_id),
             "title": (r.get("jp_title") or "").strip(),
             "institution": (r.get("jp_institution") or "").strip(),
             "unit": ", ".join(x.strip() for x in (r.get("jp_department"), r.get("jp_division")) if x),
@@ -221,6 +249,9 @@ def main():
             "locations": locs,
         })
 
+    if not postings:
+        raise SystemExit("The export has no postings; keeping the current map data.")
+
     data = {
         "source": "AEA Job Openings for Economists (JOE) listings export",
         "issues": sorted(issues),
@@ -230,6 +261,12 @@ def main():
         "jel": dict(sorted(jel_names.items())),
         "postings": postings,
     }
+    # "generated" is the date the data last changed: leave the file alone if nothing else did.
+    if args.out.exists():
+        old = json.loads(args.out.read_text())
+        if {k: v for k, v in old.items() if k != "generated"} == {k: v for k, v in data.items() if k != "generated"}:
+            print(f"No change in {len(postings)} postings; left {args.out} as is.")
+            return
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n")
 

@@ -213,7 +213,7 @@
       }).join(""));
       $("joe-meta").textContent = d.postings.length + " postings · JOE issue " + d.issues.join(", ") +
         (d.latest_posting ? " · newest posted " + fmtDate(d.latest_posting) : "") +
-        " · map data updated " + fmtDate(d.generated);
+        " · listings last changed " + fmtDate(d.generated) + " (checked daily)";
       refreshLayers();
     })
     .catch(function () { $("joe-meta").textContent = "Could not load the postings. Please try again later."; });
