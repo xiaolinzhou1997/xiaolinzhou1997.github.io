@@ -31,8 +31,8 @@ enableEmoji = true
   orgName = "Xiaolin Zhou"
   orgLocal = ""
   description = "Xiaolin Zhou, PhD candidate in Resource Economics at UMass Amherst, working on industrial organization and electricity markets."
-  favicon = "/img/icon.png"
-  logo = "/img/icon.png"
+  favicon = "/favicon.ico"
+  logo = "/img/icon.svg"  # Equilibrium icon; PNG copy at /img/icon.png
   mainSections = ["travel"]
   navallcaps = true
   # show/hide social icons in site header & footer
