@@ -541,3 +541,66 @@ $fa-font-path: '{{ "webfonts" | relURL }}';
 .jm details summary {
   @extend .mb2;
 }
+
+// homepage job market paper: abstract (~75 characters per line) beside a key-findings panel
+.jm-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+}
+@media screen and (min-width: 60em) {
+  .jm-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 3rem;
+    align-items: start;
+  }
+}
+.jm-abstract {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  max-width: 37em; // ~78 characters per line
+}
+@media screen and (min-width: 60em) {
+  .jm-abstract { font-size: 1.125rem; }
+}
+// /research/: abstracts span the page; slightly larger type and looser leading keep long lines readable
+.jm-abstract-full {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+.jm-facts {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+.jm-fact + .jm-fact {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.jm-num {
+  display: block;
+  font-family: $customheadingFontFamily, serif;
+  font-size: 1.875rem;
+  line-height: 1.15;
+  color: #2c2857;
+}
+.jm-label {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.jm-label p { margin: 0; }
+
+// lists on text pages (Teaching, CV, ...): comfortable spacing when items wrap
+.page-content ul:not(.joe-list) li {
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+// sticky header: fully opaque, so page text never shows through it (theme default 0.9 also faded the logo)
+.headroom {
+  opacity: 1;
+}

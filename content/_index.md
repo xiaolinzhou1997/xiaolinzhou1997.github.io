@@ -24,4 +24,4 @@ links:
 type: home
 ---
 
-I am an applied microeconomist working at the intersection of energy and environmental economics and industrial organization. My research asks how market structure shapes the outcomes of energy and environmental policy: who captures the benefits of clean-energy subsidies, how firms exercise market power in electricity markets, and whether new technologies can offset the externalities they create. I answer these questions with detailed market data and the tools of empirical industrial organization.
+I am an applied microeconomist working at the intersection of energy and environmental economics and industrial organization. My research asks how market structure shapes the outcomes of energy and environmental policy: who captures the benefits of clean-energy subsidies, how firms exercise market power in electricity markets, and whether new technologies, such as driver-assistance systems in an increasingly heavy vehicle fleet, can offset well-documented externalities. I answer these questions with detailed market data and the tools of empirical industrial organization.
