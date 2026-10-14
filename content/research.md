@@ -3,6 +3,7 @@ title: Research
 description: Job market paper, working papers, and work in progress.
 type: standard  # uses layouts/standard/single.html
 show_title_as_headline: true
+wide: true  # text spans the full page width
 aliases:
   - /project/
 ---

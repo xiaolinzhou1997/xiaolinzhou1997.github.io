@@ -1,7 +1,8 @@
-{{/* Theme page/standard.html, as a type so both old and new Hugo (0.146+) find it. */}}
+{{/* Theme page/standard.html, as a type so both old and new Hugo (0.146+) find it.
+     Front matter `wide: true` uses the full content width (as on the homepage) instead of mw8. */}}
 {{ define "main" }}
 <main class="page-main pa4" role="main">
-  <section class="page-content mw8 center">
+  <section class="page-content {{ if .Params.wide }}mw9 ph4-l{{ else }}mw8{{ end }} center">
     {{ if .Params.show_title_as_headline }}<h1 class="f2 f1-m f-headline-l fw5-ns mv4 lh-solid tracked-tight-ns">{{ .Title }}</h1>{{ end }}
     {{ .Content }}
   </section>

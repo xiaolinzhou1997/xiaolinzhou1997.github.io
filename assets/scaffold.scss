@@ -563,6 +563,11 @@ $fa-font-path: '{{ "webfonts" | relURL }}';
 @media screen and (min-width: 60em) {
   .jm-abstract { font-size: 1.125rem; }
 }
+// /research/: abstracts span the page; slightly larger type and looser leading keep long lines readable
+.jm-abstract-full {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
 .jm-facts {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);

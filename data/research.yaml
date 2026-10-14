@@ -27,7 +27,7 @@ jmp:
       label: "of production-based solar subsidies reaches households, under both Massachusetts programs"
     - value: "76% vs 102%"
       label: "baseline estimates for Solar Carve-Out vs SMART; much of the gap reflects subsidies moving with falling installation costs"
-    - value: "A few %"
+    - value: "2–4%"
       label: "upper bound on installer markups: the market is close to competitive"
   links:
     - name: Paper
