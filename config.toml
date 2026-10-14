@@ -119,36 +119,32 @@ enableEmoji = true
 
 [menu]
   # Configure header
-  [[menu.header]]
-    name = "Home"
-    title = "Home"
-    url = "/"
-    weight = 1
+  # "Home" sits next to the logo (layouts/partials/header.html), not in this menu.
   [[menu.header]]
     name = "Research"
     title = "Research"
     url = "/research/"
-    weight = 2
+    weight = 1
   [[menu.header]]
     name = "Teaching"
     title = "Teaching"
     url = "/teaching/"
-    weight = 3
+    weight = 2
   [[menu.header]]
     name = "CV"
     title = "Curriculum Vitae"
     url = "/cv/"
-    weight = 4
+    weight = 3
   [[menu.header]]
     name = "Personal"
     title = "Personal"
     url = "/about/"
-    weight = 5
+    weight = 4
   [[menu.header]]
     name = "Job Map"
     title = "Map of current AEA JOE job postings"
     url = "/jobs/"
-    weight = 6
+    weight = 5
   # Hidden until the first travel post is published (see TODO.md)
   # [[menu.header]]
   #   name = "Travel"
