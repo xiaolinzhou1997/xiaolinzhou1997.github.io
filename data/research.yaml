@@ -21,6 +21,14 @@ jmp:
     market power would push pass-through below one. High pass-through therefore bounds installer
     markups at a few percent of price at the point estimates. Unlike the over-shifting found for
     leased systems in California, the evidence points to an installer market close to competitive.
+  # Shown beside the abstract on the homepage ("Key findings"). Delete the list to hide the panel.
+  highlights:
+    - value: "≈ 85%"
+      label: "of production-based solar subsidies reaches households, under both Massachusetts programs"
+    - value: "76% vs 102%"
+      label: "baseline estimates for Solar Carve-Out vs SMART; much of the gap reflects subsidies moving with falling installation costs"
+    - value: "A few %"
+      label: "upper bound on installer markups: the market is close to competitive"
   links:
     - name: Paper
       icon: file-pdf

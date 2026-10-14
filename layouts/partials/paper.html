@@ -1,4 +1,5 @@
-{{/* One research entry. Context: dict "paper" (map from data/research.yaml) "open" (bool: show abstract expanded) */}}
+{{/* One research entry. Context: dict "paper" (map from data/research.yaml) "open" (bool: show abstract expanded)
+     "lead" (bool: homepage feature, larger abstract sized by its column) */}}
 {{ $p := .paper }}
 <div class="paper mb4">
   <h3 class="f4 fw6 mt0 mb1 lh-title">{{ $p.title | markdownify }}</h3>
@@ -6,7 +7,7 @@
   {{ with $p.status }}<p class="f6 i mv1">{{ . | markdownify }}</p>{{ end }}
   {{ with $p.abstract }}
     {{ if $.open }}
-      <div class="f5 lh-copy measure-wide mt2">{{ . | markdownify }}</div>
+      <div class="{{ if $.lead }}jm-abstract{{ else }}f5 lh-copy measure-wide{{ end }} mt2">{{ . | markdownify }}</div>
     {{ else }}
       <details class="f5 lh-copy measure-wide mt2"><summary class="pointer f6 ttu tracked">Abstract</summary>{{ . | markdownify }}</details>
     {{ end }}
