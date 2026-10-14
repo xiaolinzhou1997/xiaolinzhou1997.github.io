@@ -71,14 +71,22 @@ working_papers:
   - title: "Can Driver-Assistance Technology Offset the Vehicle-Weight Externality?"
     coauthors: "Yongjoon Park"
     status: "Work in progress"
-    # TODO: add one sentence on the preliminary results at the end.
     abstract: |
-      Heavier vehicles protect their own occupants but raise the risk of death and injury for everyone
-      else on the road, an externality that has grown with the shift toward SUVs and pickup trucks.
-      Advanced driver-assistance systems, such as automatic emergency braking, can prevent crashes
-      before vehicle weight comes into play. We ask whether the spread of these technologies offsets
-      the external cost of heavier vehicles, and what this implies for policies that target vehicle
-      weight.
+      We examine whether technology can offset a well-documented externality in transportation. Heavier
+      vehicles protect their own occupants but impose risk on the occupants of the vehicles they hit;
+      Anderson and Auffhammer (2014) show that being struck by a vehicle 1,000 pounds heavier raises
+      fatality risk by 40 to 50 percent. Since then, vehicles have become both heavier and far more likely
+      to carry advanced driver-assistance systems. Using about 785,000 vehicle-level records from
+      Massachusetts crash reports between 2021 and 2025, matched to curb weight and driver-assistance
+      equipment through VIN decoding, we first confirm the weight externality in a modern fleet: in
+      two-vehicle crashes, holding a vehicle's own weight fixed, a 1,000-pound heavier collision partner
+      raises the probability of severe or fatal injury by about 13 percent relative to the baseline rate.
+      Preliminary results show that all seven driver-assistance features we examine are associated with
+      a smaller weight externality, and that the association is statistically significant for dynamic
+      brake support. Because these features are bundled in trim packages and correlated with vehicle age
+      and segment, we next exploit their staggered introduction across model years to move toward causal
+      estimates. If driver-assistance technology does mitigate the weight externality, safety-technology
+      mandates could partially offset the external cost of a heavier, increasingly electric vehicle fleet.
     links: []
 
 # Add entries here (same fields as above); the section is hidden while empty.
