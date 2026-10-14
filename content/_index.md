@@ -1,5 +1,8 @@
 ---
 title: Xiaolin Zhou
+# Search results and browser tab only (the page heading stays "Xiaolin Zhou"):
+seo_title: Xiaolin Zhou | Economist, PhD Candidate at UMass Amherst
+description: Xiaolin Zhou is a PhD candidate in Resource Economics at UMass Amherst on the 2026–2027 job market, studying energy and environmental economics and industrial organization.
 subtitle: PhD Candidate in Resource Economics · University of Massachusetts Amherst
 market_note: I am on the 2026–2027 economics [job market](/jobs/).
 fields:

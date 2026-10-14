@@ -3,6 +3,7 @@
   {{ partial "meta.html" . }}
   {{ with site.Params.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
   {{ with site.Params.canonicalBaseURL }}<link rel="canonical" href="{{ strings.TrimSuffix "/" . }}{{ $.RelPermalink }}">{{ end }}
+  {{ if .IsHome }}{{ partial "person-jsonld.html" . }}{{ end }}
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/google_analytics.html" . }}
   <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
