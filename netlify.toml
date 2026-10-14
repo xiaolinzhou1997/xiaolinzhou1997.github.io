@@ -15,3 +15,14 @@ command = 'hugo -F -b $DEPLOY_PRIME_URL'
 [context.production]
 [context.production.environment]
 HUGO_ENV = 'production'
+
+# Statements are shared by direct link only: keep them out of search results.
+[[headers]]
+for = "/files/Zhou_Research_Statement.pdf"
+[headers.values]
+X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+for = "/files/Zhou_Teaching_Statement.pdf"
+[headers.values]
+X-Robots-Tag = "noindex, nofollow"
