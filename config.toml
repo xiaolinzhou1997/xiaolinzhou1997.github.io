@@ -13,6 +13,8 @@ paginate = 5
 preserveTaxonomyNames = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
+enableRobotsTXT = true  # layouts/robots.txt
+disableKinds = ["taxonomy", "term"]  # no empty Categories/Tags/Series pages
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -28,6 +30,10 @@ enableEmoji = true
     style = "github"
     
 [params]
+  # Search engines: the official address of every page (the other host is a mirror),
+  # and the Google Search Console ownership tag.
+  canonicalBaseURL = "https://xiaolinzhou1997.github.io/"
+  googleSiteVerification = "CUj4L0yyOC1nNOrGbte4My7cOD1Ni3ZkWrAz9ObLARs"
   orgName = "Xiaolin Zhou"
   orgLocal = ""
   description = "Xiaolin Zhou, PhD candidate in Resource Economics at UMass Amherst, working on industrial organization and electricity markets."

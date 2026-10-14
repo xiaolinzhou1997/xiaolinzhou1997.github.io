@@ -1,6 +1,8 @@
-{{/* Copy of the theme head.html without the async Google Analytics template (removed in newer Hugo) and the dead IE shim, and with SVG + Apple touch icons. */}}
+{{/* Copy of the theme head.html without the async Google Analytics template (removed in newer Hugo) and the dead IE shim, and with SVG + Apple touch icons, a canonical link and the Google verification tag. */}}
 <head>
   {{ partial "meta.html" . }}
+  {{ with site.Params.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
+  {{ with site.Params.canonicalBaseURL }}<link rel="canonical" href="{{ strings.TrimSuffix "/" . }}{{ $.RelPermalink }}">{{ end }}
   {{ template "_internal/schema.html" . }}
   {{ template "_internal/google_analytics.html" . }}
   <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">

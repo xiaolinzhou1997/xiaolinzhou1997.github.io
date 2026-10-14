@@ -1,5 +1,6 @@
 ---
 title: Travel Notes
+draft: true  # not built while there are no posts (see TODO.md); delete this line to publish /travel/
 description: "Places I've been, and what I noticed there."
 aliases:
   - /blog/
