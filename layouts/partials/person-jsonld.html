@@ -1,0 +1,16 @@
+{{/* schema.org Person for the homepage: helps search engines connect the site to its owner. */}}
+{{ $base := site.Params.canonicalBaseURL | default site.BaseURL }}
+{{ $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" "Xiaolin Zhou"
+  "url" $base
+  "image" (printf "%simg/headshot.jpg" $base)
+  "email" "mailto:xiaolinzhou@umass.edu"
+  "jobTitle" "PhD Candidate in Resource Economics"
+  "affiliation" (dict "@type" "CollegeOrUniversity" "name" "University of Massachusetts Amherst")
+  "alumniOf" (slice (dict "@type" "CollegeOrUniversity" "name" "University of Arizona") (dict "@type" "CollegeOrUniversity" "name" "Tamkang University"))
+  "knowsAbout" (slice "Energy economics" "Environmental economics" "Industrial organization" "Electricity markets" "Solar subsidies")
+  "sameAs" (slice "https://github.com/xiaolinzhou1997" "https://xiaolinzhou.netlify.app/")
+}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
