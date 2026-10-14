@@ -54,12 +54,31 @@ working_papers:
   - title: "Market Power in the New England Electricity Market: Evidence from Nuclear Refueling Outages"
     coauthors: "Ming Ge, James Ji, and Matt Woerman"
     status: ""
-    abstract: ""  # add an abstract here and it shows as an expandable "Abstract"
-    links: []
+    # Numbers from the November 2023 SSRN version; update if the current draft differs.
+    abstract: |
+      Each of New England's four nuclear reactors refuels roughly every 18 months, taking it offline
+      for about a month. We use these scheduled outages as supply shocks to study market power in the
+      ISO New England wholesale electricity market. Using day-ahead market data from 2016 to 2018, we
+      find that market-clearing prices rise by about $4.9/MWh on average when at least one reactor is
+      offline. Examining how suppliers adjust their bids during these outages, we attribute roughly 36%
+      of the price increase to the exercise of market power, implying a substantial transfer from
+      consumers to suppliers.
+    links:
+      - name: SSRN
+        icon: ssrn
+        icon_pack: ai
+        url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4616702
   - title: "Can Driver-Assistance Technology Offset the Vehicle-Weight Externality?"
     coauthors: "Yongjoon Park"
-    status: ""
-    abstract: ""
+    status: "Work in progress"
+    # TODO: add one sentence on the preliminary results at the end.
+    abstract: |
+      Heavier vehicles protect their own occupants but raise the risk of death and injury for everyone
+      else on the road, an externality that has grown with the shift toward SUVs and pickup trucks.
+      Advanced driver-assistance systems, such as automatic emergency braking, can prevent crashes
+      before vehicle weight comes into play. We ask whether the spread of these technologies offsets
+      the external cost of heavier vehicles, and what this implies for policies that target vehicle
+      weight.
     links: []
 
 # Add entries here (same fields as above); the section is hidden while empty.
