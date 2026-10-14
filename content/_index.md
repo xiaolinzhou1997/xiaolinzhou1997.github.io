@@ -5,8 +5,8 @@ market_note: I am on the 2026–2027 economics [job market](/jobs/).
 fields:
   - Energy and Environmental Economics
   - Industrial Organization
-# images:  # TODO.md: add a professional headshot to static/img/ and uncomment
-#   - img/headshot.jpg
+images:
+  - img/headshot.jpg
 show_social_links: true
 links:
   - name: Job Market Paper
@@ -24,6 +24,4 @@ links:
 type: home
 ---
 
-In my job market paper, I show that about 85% of Massachusetts' production-based solar subsidies reach households, evidence of a residential solar installer market close to competitive.
-With Ming Ge, James Ji, and Matt Woerman, I use nuclear refueling outages to measure market power in the New England wholesale electricity market.
-With Yongjoon Park, I ask whether driver-assistance technology can offset the safety externality that heavier vehicles impose on others on the road.
+I am an applied microeconomist working at the intersection of energy and environmental economics and industrial organization. My research asks how market structure shapes the outcomes of energy and environmental policy: who captures the benefits of clean-energy subsidies, how firms exercise market power in electricity markets, and whether new technologies can offset the externalities they create. I answer these questions with detailed market data and the tools of empirical industrial organization.

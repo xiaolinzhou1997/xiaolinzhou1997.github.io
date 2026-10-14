@@ -31,8 +31,8 @@ enableEmoji = true
   orgName = "Xiaolin Zhou"
   orgLocal = ""
   description = "Xiaolin Zhou, PhD candidate in Resource Economics at UMass Amherst, working on industrial organization and electricity markets."
-  favicon = "/img/icon.png"
-  logo = "/img/icon.png"
+  favicon = "/favicon.ico"
+  logo = "/img/icon.svg"  # Equilibrium icon; PNG copy at /img/icon.png
   mainSections = ["travel"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -119,20 +119,21 @@ enableEmoji = true
 
 [menu]
   # Configure header
+  # "Home" sits next to the logo (layouts/partials/header.html), not in this menu.
   [[menu.header]]
     name = "Research"
     title = "Research"
     url = "/research/"
     weight = 1
   [[menu.header]]
-    name = "CV"
-    title = "Curriculum Vitae"
-    url = "/cv/"
-    weight = 2
-  [[menu.header]]
     name = "Teaching"
     title = "Teaching"
     url = "/teaching/"
+    weight = 2
+  [[menu.header]]
+    name = "CV"
+    title = "Curriculum Vitae"
+    url = "/cv/"
     weight = 3
   [[menu.header]]
     name = "Personal"
