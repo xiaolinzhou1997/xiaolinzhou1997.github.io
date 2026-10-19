@@ -11,7 +11,8 @@ show_title_as_headline: true
 
 *Last updated: October 2026*
 
-<object data="/files/Zhou_CV.pdf" type="application/pdf" width="100%" height="900px">
+<!-- Shown on the page: one-page CV (Zhou_CV_short.pdf). Download button and homepage link: extended CV (Zhou_CV.pdf). -->
+<object data="/files/Zhou_CV_short.pdf" type="application/pdf" width="100%" height="900px">
   <p>Your browser can't display the PDF here. <a href="/files/Zhou_CV.pdf">Download the CV</a> instead.</p>
 </object>
 
