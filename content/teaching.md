@@ -17,7 +17,9 @@ University of Massachusetts Amherst
 University of Massachusetts Amherst
 
 - **Intro to Statistics** (Undergraduate), multiple terms
-- **Industrial Economics** (Undergraduate)
-- **Statistics** (Graduate)
+- **Industrial Organization** (Undergraduate)
+- **Public Policy in Private Market** (Undergraduate)
+- **Hunger in the Global Economy** (Undergraduate)
+- **Statistical Inference** (Graduate)
 
 <!-- Optional: link teaching evaluations or a teaching statement placed in static/files/ -->
