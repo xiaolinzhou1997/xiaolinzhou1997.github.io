@@ -4,31 +4,32 @@
 # Link icons are Font Awesome names (icon_pack fas/fab) or Academicons (icon_pack ai).
 
 jmp:
-  title: "Subsidy Pass-through and Market Power: Evidence from Production-Based Solar Subsidies"
+  title: "Subsidy Pass-Through and Market Power: Evidence from Production-Based Solar Subsidies"
   coauthors: ""
   status: "Latest version: October 2026"
   abstract: |
-    I examine the pass-through of solar subsidies in Massachusetts by comparing two distinct
-    incentive programs that pay residential solar adopters based on the electricity their systems
-    generate: the Solar Carve-Out program, which compensates owners through tradable SRECs sold at
-    market prices, and its successor, SMART, which pays a fixed rate set at the time of application.
-    A key contribution is the construction of subsidy measures specific to each project that account
-    for heterogeneity in electricity generation potential, which allows me to identify pass-through
-    from differences in generation across roofs. Baseline estimates are 76% under Solar Carve-Out and
-    102% under SMART, but much of this gap reflects how each subsidy moved over time alongside falling
-    installation costs. Using only variation in generation across roofs, pass-through is about 85% in
-    both programs, with no significant difference between them. Demand under SMART is log-concave, so
-    market power would push pass-through below one. High pass-through therefore bounds installer
-    markups at a few percent of price at the point estimates. Unlike the over-shifting found for
-    leased systems in California, the evidence points to an installer market close to competitive.
+    Two production-based solar subsidies in Massachusetts paid residential adopters for the electricity
+    their systems generate, one through tradable certificates sold at market prices and its successor
+    through a fixed rate per kWh set at approval. The programs differed in the form, predictability, and
+    size of the payment. I build a subsidy measure for each roof from its modeled generation, which allows
+    me to absorb the timing of each subsidy with year-month fixed effects and identify pass-through from
+    differences in the subsidy across roofs installed by the same installer in the same town and year.
+    Pass-through is about 85% in both programs. The difference between them is −0.02 (standard error
+    0.085), which rules out the gap of 0.26 that a comparison of the programs over time suggests. That gap
+    reflects the timing of each subsidy relative to falling installation costs, not the design of the
+    subsidy. Because variation across roofs removes the supply side from the pass-through formula, the
+    shortfall below one bounds installer market power. Demand under SMART is log-concave, and installer
+    markups are at most 2–4% of price at the point estimates and stay at or below about 5% even if a fifth
+    of the variation in modeled generation is error. Unlike the over-shifting found in other settings,
+    high pass-through here points to a nearly competitive market.
   # Shown beside the abstract on the homepage ("Key findings"). Delete the list to hide the panel.
   highlights:
     - value: "≈ 85%"
       label: "of production-based solar subsidies reaches households, under both Massachusetts programs"
-    - value: "76% vs 102%"
-      label: "baseline estimates for Solar Carve-Out vs SMART; much of the gap reflects subsidies moving with falling installation costs"
+    - value: "−0.02"
+      label: "difference in pass-through between the two programs (s.e. 0.085), ruling out the 0.26 gap that a comparison over time suggests"
     - value: "2–4%"
-      label: "upper bound on installer markups: the market is close to competitive"
+      label: "upper bound on installer markups at the point estimates, and at most about 5% allowing for measurement error"
   links:
     - name: Paper
       icon: file-pdf
@@ -54,15 +55,14 @@ working_papers:
   - title: "Market Power in the New England Electricity Market: Evidence from Nuclear Refueling Outages"
     coauthors: "Ming Ge, James Ji, and Matt Woerman"
     status: ""
-    # Numbers from the November 2023 SSRN version; update if the current draft differs.
     abstract: |
       Each of New England's four nuclear reactors refuels roughly every 18 months, taking it offline
       for about a month. We use these scheduled outages as supply shocks to study market power in the
       ISO New England wholesale electricity market. Using day-ahead market data from 2016 to 2018, we
       find that market-clearing prices rise by about $4.9/MWh on average when at least one reactor is
       offline. Examining how suppliers adjust their bids during these outages, we attribute roughly 36%
-      of the price increase to the exercise of market power, implying a substantial transfer from
-      consumers to suppliers.
+      of the price increase to the exercise of market power, a transfer from consumers to suppliers of
+      about $43–45 million per year.
     links:
       - name: SSRN
         icon: ssrn

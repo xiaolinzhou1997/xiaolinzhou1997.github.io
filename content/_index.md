@@ -8,6 +8,7 @@ market_note: I am on the 2026–2027 economics [job market](/jobs/).
 fields:
   - Energy and Environmental Economics
   - Industrial Organization
+  - Applied Economics
 images:
   - img/headshot.jpg
 show_social_links: true
