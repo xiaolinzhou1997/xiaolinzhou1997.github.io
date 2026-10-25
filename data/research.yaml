@@ -4,32 +4,27 @@
 # Link icons are Font Awesome names (icon_pack fas/fab) or Academicons (icon_pack ai).
 
 jmp:
-  title: "Subsidy Pass-Through and Market Power: Evidence from Production-Based Solar Subsidies"
+  title: "Subsidies, Cost Trends, and Pass-Through: Evidence from the Residential Solar Market"
   coauthors: ""
   status: "Latest version: October 2026"
   abstract: |
-    Two production-based solar subsidies in Massachusetts paid residential adopters for the electricity
-    their systems generate, one through tradable certificates sold at market prices and its successor
-    through a fixed rate per kWh set at approval. The programs differed in the form, predictability, and
-    size of the payment. I build a subsidy measure for each roof from its modeled generation, which allows
-    me to absorb the timing of each subsidy with year-month fixed effects and identify pass-through from
-    differences in the subsidy across roofs installed by the same installer in the same town and year.
-    Pass-through is about 85% in both programs. The difference between them is −0.02 (standard error
-    0.085), which rules out the gap of 0.26 that a comparison of the programs over time suggests. That gap
-    reflects the timing of each subsidy relative to falling installation costs, not the design of the
-    subsidy. Because variation across roofs removes the supply side from the pass-through formula, the
-    shortfall below one bounds installer market power. Demand under SMART is log-concave, and installer
-    markups are at most 2–4% of price at the point estimates and stay at or below about 5% even if a fifth
-    of the variation in modeled generation is error. Unlike the over-shifting found in other settings,
-    high pass-through here points to a nearly competitive market.
+    Solar subsidies are scheduled to fall as deployment grows, while installation costs change over the
+    same period, so pass-through estimates that rely on subsidy timing can pick up cost trends. I study
+    two Massachusetts programs that pay homeowners per kilowatt-hour, first through tradable certificates
+    and then through a fixed rate. I identify pass-through from differences in the subsidy across roofs
+    that the same installer equips in the same month, which arise because the payment depends on each
+    roof's generation. I find that buyers receive about 85 percent of the subsidy under both designs,
+    whereas a comparison over time suggests a 26-point gap. Installers raise prices only slightly for
+    roofs that earn larger subsidies, which, with log-concave demand, bounds their markups at 2–7 percent
+    of price.
   # Shown beside the abstract on the homepage ("Key findings"). Delete the list to hide the panel.
   highlights:
     - value: "≈ 85%"
-      label: "of production-based solar subsidies reaches households, under both Massachusetts programs"
+      label: "of the subsidy reaches buyers, under both the certificate-based and the fixed-rate design"
     - value: "−0.02"
-      label: "difference in pass-through between the two programs (s.e. 0.085), ruling out the 0.26 gap that a comparison over time suggests"
-    - value: "2–4%"
-      label: "upper bound on installer markups at the point estimates, and at most about 5% allowing for measurement error"
+      label: "difference in pass-through between the two designs (s.e. 0.085), against the 26-point gap that a comparison over time suggests"
+    - value: "2–7%"
+      label: "upper bound on installer markups as a share of price, given log-concave demand"
   links:
     - name: Paper
       icon: file-pdf
