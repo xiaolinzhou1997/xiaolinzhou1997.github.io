@@ -12,11 +12,11 @@ jmp:
     same period, so pass-through estimates that rely on subsidy timing can pick up cost trends. I study
     two Massachusetts programs that pay homeowners per kilowatt-hour, first through tradable certificates
     and then through a fixed rate. I identify pass-through from differences in the subsidy across roofs
-    that the same installer equips in the same month, which arise because the payment depends on each
-    roof's generation. I find that buyers receive about 85 percent of the subsidy under both designs,
-    whereas a comparison over time suggests a 26-point gap. Installers raise prices only slightly for
-    roofs that earn larger subsidies, which, with log-concave demand, bounds their markups at 2–7 percent
-    of price.
+    that the same installer equips at the same time, because the subsidy depends on each roof's
+    generation. I find that buyers receive about 85 percent of the subsidy under both designs, whereas a
+    comparison over time suggests a large gap. Installers raise prices only slightly for roofs that earn
+    larger subsidies, which, with log-concave demand under the fixed-rate program, bounds the markup
+    installers earn by pricing the roof at 2–7 percent of price.
   # Shown beside the abstract on the homepage ("Key findings"). Delete the list to hide the panel.
   highlights:
     - value: "≈ 85%"
@@ -24,7 +24,7 @@ jmp:
     - value: "−0.02"
       label: "difference in pass-through between the two designs (s.e. 0.085), against the 26-point gap that a comparison over time suggests"
     - value: "2–7%"
-      label: "upper bound on installer markups as a share of price, given log-concave demand"
+      label: "upper bound on the markup installers earn by pricing each roof, as a share of price, given log-concave demand"
   links:
     - name: Paper
       icon: file-pdf
