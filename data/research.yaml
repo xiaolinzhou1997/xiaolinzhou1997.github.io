@@ -63,19 +63,23 @@ working_papers:
         icon: ssrn
         icon_pack: ai
         url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4616702
-  - title: "Can Driver-Assistance Technology Offset the Vehicle-Weight Externality?"
+  - title: "Braking Bad: Can Technology Offset the External Cost of Weight?"
     coauthors: "Yongjoon Park"
     status: "Work in progress"
     abstract: |
-      We examine whether technology can offset a well-documented externality in transportation. Heavier
-      vehicles protect their own occupants but impose risk on the occupants of the vehicles they hit;
-      Anderson and Auffhammer (2014) show that being struck by a vehicle 1,000 pounds heavier raises
-      fatality risk by 40 to 50 percent. Since then, vehicles have become both heavier and far more likely
-      to carry advanced driver-assistance systems. We link millions of national, Massachusetts, and Texas
-      crash records to vehicle weight by VIN. We find that a striking vehicle 1,000 pounds heavier raises
-      the risk of death by 53 percent. Driver-assistance technology cuts rear-end crashes by 30–50 percent
-      but has no effect on angle and head-on crashes. Policy tools to regulate vehicle weight are still
-      needed to mitigate the damage.
+      A heavier vehicle protects its own occupants but endangers those of the vehicles it hits, and the
+      fleet keeps getting heavier. Automatic emergency braking (AEB), required on new light vehicles from
+      September 2029, could offset this harm by preventing crashes or lowering impact speeds. We combine
+      NHTSA's national crash data with every police-reported crash in Massachusetts and every reportable
+      crash in Texas, matching each vehicle's VIN to its curb weight and standard safety equipment. A
+      striking vehicle 1,000 pounds heavier raises the risk of death by 53 percent of the mean nationally
+      and 44 percent in Texas. Comparing the two vehicles within each crash, we find that AEB lowers the
+      odds of striking the car ahead by 30 to 50 percent. It has no effect on angle, head-on, or sideswipe
+      crashes, and it does not make each pound less harmful once we control for model year. AEB therefore
+      works where the externality is smallest: rear-end crashes carry 8.5 percent of two-vehicle deaths
+      nationally, while angle and head-on crashes carry 83 percent. A back-of-the-envelope calculation for
+      Texas shows that 1,000 more pounds on every vehicle costs 219 lives a year in two-vehicle crashes,
+      while AEB on every vehicle saves 13 to 27. Policy tools to regulate vehicle weight are still needed.
     links: []
 
 # Add entries here (same fields as above); the section is hidden while empty.
