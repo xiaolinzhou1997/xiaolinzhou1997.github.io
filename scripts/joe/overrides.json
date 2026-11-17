@@ -44,5 +44,10 @@
     "lat": 35.7075,
     "lon": 139.7686,
     "label": "Bunkyo, Tokyo, Japan"
+  },
+  "UNITED STATES MINOR OUTLYING ISLANDS Rhode Island Smithfield": {
+    "lat": 41.922,
+    "lon": -71.539,
+    "label": "Smithfield, RI"
   }
 }
