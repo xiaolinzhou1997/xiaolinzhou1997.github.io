@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: {{ "sitemap.xml" | absURL }}
+{{/* Point crawlers at the canonical (github.io) sitemap from every host, so the Netlify copy doesn't advertise a second set of URLs. */ -}}
+Sitemap: {{ with site.Params.canonicalBaseURL }}{{ strings.TrimSuffix "/" . }}/sitemap.xml{{ else }}{{ "sitemap.xml" | absURL }}{{ end }}
