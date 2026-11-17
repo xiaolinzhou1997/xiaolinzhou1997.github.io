@@ -1,0 +1,40 @@
+{{/* Theme footer.html plus GoatCounter statistics (params.goatcounter) and a footer visitor
+     count (static/js/visitor-counter.js), which stays hidden unless GoatCounter makes it public. */}}
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      {{ if ne site.Copyright "" }}{{ site.Copyright | safeHTML }}{{ else }}&copy; {{ now.Format "2006"}}{{ if site.Params.orgName }} {{ site.Params.orgName }}{{ end }}{{ if site.Params.orgLocal }}, {{ site.Params.orgLocal }}{{ end }}{{ end }}
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      {{ with site.Params.goatcounter }}<span class="visitor-count" data-goatcounter="{{ . }}" hidden><span class="middot-divider"></span><span class="visitor-count-n"></span></span>{{ end }}
+      <br />
+    </p>
+    {{ if and (not .IsHome) (site.Params.socialInFooter) }}
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      {{ partial "shared/social-links.html" . }}
+    </div>
+    {{ end }}
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      {{ range site.Menus.footer }}
+      <a class="dib pv1 ph2 link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </nav>
+  {{ with site.Params.math }}
+    {{ partial "shared/math-preprocess.html" }}
+  {{ with .renderer }}
+    {{ if eq . "mathjax" }}
+      {{ partial "shared/math-render-mathjax.html" }}
+    {{ end }}
+    {{ if eq . "katex" }}
+      {{ partial "shared/math-render-katex.html" }}
+    {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ with site.Params.goatcounter }}
+  {{/* No cookies; localhost is skipped by count.js and Netlify previews (hosts with "--") here. */}}
+  <script>if (location.hostname.indexOf('--') > -1) window.goatcounter = {no_onload: true};</script>
+  <script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="{{ "js/visitor-counter.js" | relURL }}" defer></script>
+  {{ end }}
+</footer>
