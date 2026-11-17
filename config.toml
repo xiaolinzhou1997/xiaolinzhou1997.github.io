@@ -34,6 +34,10 @@ disableKinds = ["taxonomy", "term"]  # no empty Categories/Tags/Series pages
   # and the Google Search Console ownership tag.
   canonicalBaseURL = "https://xiaolinzhou1997.github.io/"
   googleSiteVerification = "CUj4L0yyOC1nNOrGbte4My7cOD1Ni3ZkWrAz9ObLARs"
+  # GoatCounter site code (statistics at https://xiaolinzhou1997.goatcounter.com); "" turns it off.
+  # The footer shows the visitor total only if "Allow adding visitor counts on your website"
+  # is on in GoatCounter's settings; otherwise the statistics stay private.
+  goatcounter = "xiaolinzhou1997"
   orgName = "Xiaolin Zhou"
   orgLocal = ""
   description = "Xiaolin Zhou, PhD candidate in Resource Economics at UMass Amherst, working on industrial organization and electricity markets."
