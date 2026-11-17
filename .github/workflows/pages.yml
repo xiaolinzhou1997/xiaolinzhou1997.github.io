@@ -53,3 +53,23 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Tell Bing (and DuckDuckGo, Yahoo, Yandex, which share IndexNow) that pages changed.
+  # Only on real content pushes, not the daily Job Map refresh. Never fails the deploy.
+  # The key must match static/<key>.txt. Google doesn't use IndexNow; it reads the sitemap.
+  indexnow:
+    needs: deploy
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    env:
+      SITE: https://xiaolinzhou1997.github.io
+      KEY: 4ed3276b0e61c6b54426946e7c984412
+    steps:
+      - name: Submit sitemap URLs
+        run: |
+          urls=$(curl -sSf "$SITE/sitemap.xml" | grep -o '<loc>[^<]*' | sed 's/<loc>//' | jq -R . | jq -s -c .)
+          echo "$urls"
+          curl -sS -w '\nHTTP %{http_code}\n' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"xiaolinzhou1997.github.io\",\"key\":\"$KEY\",\"keyLocation\":\"$SITE/$KEY.txt\",\"urlList\":$urls}"
