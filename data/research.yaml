@@ -29,7 +29,7 @@ jmp:
     - name: Paper
       icon: file-pdf
       icon_pack: fas
-      url: /files/Zhou_JMP.pdf
+      url: /jmp/?from=site
     # - name: Slides
     #   icon: chalkboard
     #   icon_pack: fas

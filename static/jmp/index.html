@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Job Market Paper | Xiaolin Zhou</title>
+<!--
+  Counted link to the job market paper. The CVs and the site link here instead of straight
+  to the PDF, because GoatCounter can only count HTML pages that run its script.
+  It records one pageview as path "/jmp" (or "/jmp?from=<tag>" when the link carries
+  ?from=<tag>, e.g. cv-extended), then opens /files/Zhou_JMP.pdf, which keeps its old URL
+  for CVs already sent. If the script is blocked or slow, the PDF opens anyway.
+-->
+<noscript><meta http-equiv="refresh" content="0; url=/files/Zhou_JMP.pdf"></noscript>
+<style>
+  body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 3rem 1rem; text-align: center; color: #222; background: #fff; }
+  a { color: #0645ad; }
+</style>
+<script>
+  (function () {
+    var pdf = '/files/Zhou_JMP.pdf', done = false;
+    var m = /[?&]from=([a-z0-9-]{1,40})(&|$)/i.exec(location.search);
+    var path = '/jmp' + (m ? '?from=' + m[1].toLowerCase() : '');
+    window.goatcounter = { no_onload: true };
+    window.jmpGo = function () {
+      if (done) return;
+      done = true;
+      location.replace(pdf);
+    };
+    // Count once count.js has loaded (Netlify previews, hosts with "--", are not counted).
+    window.jmpCount = function () {
+      try {
+        if (location.hostname.indexOf('--') === -1)
+          window.goatcounter.count({ path: path, title: 'Job Market Paper (PDF)' });
+      } catch (e) {}
+      setTimeout(window.jmpGo, 150);  // sendBeacon survives the redirect; the pause covers its image fallback
+    };
+    setTimeout(window.jmpGo, 2500);   // never keep a reader waiting on the counter
+  })();
+</script>
+<script data-goatcounter="https://xiaolinzhou1997.goatcounter.com/count" async src="//gc.zgo.at/count.js" onload="jmpCount()" onerror="jmpGo()"></script>
+</head>
+<body>
+  <p>Opening the job market paper&hellip;</p>
+  <p><a href="/files/Zhou_JMP.pdf">Click here if it does not open.</a></p>
+</body>
+</html>

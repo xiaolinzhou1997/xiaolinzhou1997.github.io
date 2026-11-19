@@ -11,6 +11,7 @@ Build locally with `hugo server` (Hugo extended; tested with 0.105.0, which the 
 | Papers (homepage JMP + Research page) | `data/research.yaml` |
 | References and placement director | `data/references.yaml` |
 | JMP and CV PDFs | `static/files/Zhou_JMP.pdf`, `static/files/Zhou_CV.pdf` (keep the names) |
+| Counted JMP link | `static/jmp/index.html`. Link to `/jmp/?from=<tag>` (CVs, site buttons), not to the PDF: GoatCounter counts the click as `/jmp?from=<tag>`, then the PDF opens |
 | Headshot | add to `static/img/`, then point `images:` in `content/_index.md` to it |
 | CV page, Teaching page | `content/cv.md`, `content/teaching.md` |
 | About page | `content/about/main/index.md`, `content/about/sidebar/index.md` |
