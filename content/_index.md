@@ -16,7 +16,7 @@ links:
   - name: Job Market Paper
     icon: file-pdf
     icon_pack: fas
-    url: /files/Zhou_JMP.pdf
+    url: /jmp/?from=site
   - name: CV
     icon: file-alt
     icon_pack: fas
