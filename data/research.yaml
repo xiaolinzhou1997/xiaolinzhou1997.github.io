@@ -63,20 +63,35 @@ working_papers:
         icon: ssrn
         icon_pack: ai
         url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4616702
-  - title: "Can Driver-Assistance Technology Offset the Vehicle-Weight Externality?"
+  - title: "Braking Bad: Can Driver-Assistance Technology Offset the Vehicle-Weight Externality?"
     coauthors: "Yongjoon Park"
-    status: "Work in progress"
+    status: "Draft in progress"
     abstract: |
-      We examine whether technology can offset a well-documented externality in transportation. Heavier
-      vehicles protect their own occupants but impose risk on the occupants of the vehicles they hit;
-      Anderson and Auffhammer (2014) show that being struck by a vehicle 1,000 pounds heavier raises
-      fatality risk by 40 to 50 percent. Since then, vehicles have become both heavier and far more likely
-      to carry advanced driver-assistance systems. We link millions of national, Massachusetts, and Texas
-      crash records to vehicle weight by VIN. We find that a striking vehicle 1,000 pounds heavier raises
-      the risk of death by 53 percent. Driver-assistance technology cuts rear-end crashes by 30–50 percent
-      but has no effect on angle and head-on crashes. Policy tools to regulate vehicle weight are still
-      needed to mitigate the damage.
+      Heavier vehicles protect their own occupants but endanger everyone they hit. Over the past decade, 
+      vehicles have grown heavier just as Automatic Emergency Braking (AEB) has become widespread. We measure
+      how much AEB offsets this externality, linking crash records from Texas, Massachusetts, and a national
+      sample to each vehicle's weight and equipment. Identification comes from the roles vehicles play in 
+      two-car crashes. Being hit by a vehicle 1,000 pounds heavier raises the risk of death by 44 to 62 percent.
+      AEB avoids 30 to 40 percent of rear-end strikes but has no effect on angle and head-on crashes, which 
+      account for 83 percent of the deaths that weight adds. Universal AEB would therefore prevent only 5 
+      percent of those deaths and lower the corrective fee on weight from $234 to $220 per 1,000 pounds a year.
     links: []
 
 # Add entries here (same fields as above); the section is hidden while empty.
-work_in_progress: []
+work_in_progress: 
+  - title: "Residential Sorting and Data Center"
+    coauthors: ""
+    status: ""
+    links: []
+  - title: "Used EV Credit Phase-out"
+    coauthors: ""
+    status: ""
+    links: []
+  - title: "Utility Ownership and Solar Cost Shifting"
+    coauthors: ""
+    status: ""
+    links: []
+  - title: "Large Load Tariffs and Cost Allocation"
+    coauthors: ""
+    status: ""
+    links: []
