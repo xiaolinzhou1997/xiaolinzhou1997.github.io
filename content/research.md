@@ -18,9 +18,6 @@ aliases:
 
 {{< papers "working_papers" >}}
 
-<!-- Uncomment once data/research.yaml has work_in_progress entries:
-
 ## Work in Progress
 
 {{< papers "work_in_progress" >}}
--->
